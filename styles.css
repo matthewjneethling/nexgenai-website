@@ -267,3 +267,4 @@ section.compact { padding: 72px 0; }
 .industry-card p { font-size: 0.93rem; }
 @media (max-width: 720px) { .industry-grid { grid-template-columns: 1fr 1fr; gap: 12px; } .industry-card { padding: 18px; } .industry-card p { font-size: 0.88rem; } }
 @media (max-width: 420px) { .industry-grid { grid-template-columns: 1fr; } }
+section[id] { scroll-margin-top: 80px; }
