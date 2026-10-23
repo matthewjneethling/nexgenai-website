@@ -278,3 +278,4 @@ section[id] { scroll-margin-top: 80px; }
 @media (max-width: 420px) { .tool-grid { grid-template-columns: 1fr; } }
 .tool-list { list-style: none; margin-top: 12px; }
 .tool-list li { margin: 8px 0; font-size: 0.93rem; color: var(--ink-soft); }
+.section-head-wide { max-width: none; }
