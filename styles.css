@@ -154,7 +154,9 @@ section { padding: 96px 0; }
 .contact-card { display: flex; flex-direction: column; gap: 6px; text-decoration: none; transition: 0.15s ease; }
 .contact-card:hover { border-color: var(--ink); }
 .contact-card .label { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
-.contact-card .value { font-family: "Manrope", sans-serif; font-weight: 700; font-size: 1.1rem; word-break: break-word; }
+.contact-card .value { font-family: "Manrope", sans-serif; font-weight: 700; font-size: 1.1rem; white-space: nowrap; }
+.contact-grid { grid-template-columns: 1.5fr 1fr 1fr; }
+.footer-grid li { white-space: nowrap; }
 .contact-card .hint { color: var(--accent); font-size: 0.9rem; font-weight: 600; margin-top: 8px; }
 
 /* Booking */
@@ -171,7 +173,7 @@ section { padding: 96px 0; }
 
 /* Footer */
 .site-footer { border-top: 1px solid var(--line); padding: 56px 0 40px; font-size: 0.92rem; color: var(--ink-soft); }
-.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+.footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1.4fr; gap: 40px; }
 .footer-grid h4 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 14px; }
 .footer-grid ul { list-style: none; }
 .footer-grid li { margin: 8px 0; }
@@ -182,7 +184,8 @@ section { padding: 96px 0; }
 /* Responsive */
 @media (max-width: 960px) {
   .grid-3, .grid-4 { grid-template-columns: 1fr 1fr; }
-  .split, .booking-layout { grid-template-columns: 1fr; gap: 40px; }
+  .split, .booking-layout, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .contact-grid { gap: 20px; }
   .service { grid-template-columns: 1fr; gap: 16px; }
 }
 @media (max-width: 720px) {
