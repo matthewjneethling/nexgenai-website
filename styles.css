@@ -268,3 +268,11 @@ section.compact { padding: 72px 0; }
 @media (max-width: 720px) { .industry-grid { grid-template-columns: 1fr 1fr; gap: 12px; } .industry-card { padding: 18px; } .industry-card p { font-size: 0.88rem; } }
 @media (max-width: 420px) { .industry-grid { grid-template-columns: 1fr; } }
 section[id] { scroll-margin-top: 80px; }
+
+/* Tool group cards */
+.tool-card { padding: 26px; }
+.tool-card h3 { font-size: 1.05rem; }
+.tool-card .ticks { margin-top: 12px; }
+.tool-card .ticks li { margin: 8px 0; font-size: 0.93rem; }
+@media (max-width: 720px) { .tool-grid { grid-template-columns: 1fr 1fr; gap: 12px; } .tool-card { padding: 18px; } }
+@media (max-width: 420px) { .tool-grid { grid-template-columns: 1fr; } }
