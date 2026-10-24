@@ -95,3 +95,18 @@
 
 /* Only the double white gap before the final call-to-action box */
 .sec-how { padding-bottom: 24px; }
+
+/* Footer: 4 equal-style columns (brand · Pages · Legal · Contact) */
+.site-footer { padding: 56px 0 24px; }
+.footer-cols { display: grid; grid-template-columns: 1.25fr 0.8fr 0.8fr 1.45fr; gap: 40px; align-items: start; }
+.fcol h4 { margin: 0 0 16px; font-family: "Manrope", sans-serif; font-size: 1.05rem; font-weight: 800; letter-spacing: 0; text-transform: none; color: #fff; }
+.fcol ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.fcol li { margin: 0; font-size: 0.95rem; }
+.fcol-brand p { margin-top: 14px; max-width: 320px; font-size: 0.95rem; line-height: 1.6; }
+.fcol a, .floc { display: inline-flex; align-items: flex-start; gap: 10px; text-decoration: none; }
+.fcol a { color: #d6d9e0; } .fcol a:hover { color: #fff; }
+.fcol .logo { align-items: center; }
+.fcontact span { overflow-wrap: anywhere; }
+.site-footer .footer-bottom { margin-top: 40px; padding-top: 22px; padding-bottom: 0; }
+@media (max-width: 960px) { .footer-cols { grid-template-columns: 1fr 1fr; gap: 32px 28px; } }
+@media (max-width: 720px) { .site-footer { padding: 44px 0 20px; } .footer-cols { grid-template-columns: 1fr; gap: 28px; } .site-footer .footer-bottom { padding-bottom: 56px; } }
