@@ -293,3 +293,14 @@ section[id] { scroll-margin-top: 80px; }
 .legal-date { color: var(--muted); font-size: 0.9rem; }
 @media (max-width: 720px) { .footer-bottom { flex-direction: column; } }
 .footer-bottom { padding-bottom: 56px; } .legal-links { padding-right: 76px; }
+
+/* Booking page: structured call hours */
+.hours { margin-top: 32px; padding: 20px 22px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg-soft); }
+.hours h3 { font-size: 1.05rem; margin-bottom: 12px; }
+.hours-list { list-style: none; }
+.hours-list li { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid var(--line); font-size: 0.97rem; }
+.hours-list li:first-child { border-top: 0; padding-top: 0; }
+.hours-list span { color: var(--ink-soft); }
+.hours-list strong { color: var(--ink); font-weight: 600; white-space: nowrap; }
+.hours-note { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: 0.9rem; }
+.hours-note a { color: var(--accent); font-weight: 600; }
