@@ -1,0 +1,47 @@
+/* TEST THEME — gray/white rhythm (remove this file + link to reset) */
+:root { --gray-band: #2f333b; --gray-band-line: #454a55; }
+.site-header { background: var(--gray-band); border-bottom-color: var(--gray-band-line); }
+.site-header .logo, .site-header .logo span { color: #fff; }
+.site-header .logo-mark .chev-a { stroke: #fff; }
+.site-header .logo .ai, .site-header .logo-mark .chev-b { color: #7d9cff; stroke: #7d9cff; }
+.site-header .nav-links a { color: #d6d9e0; }
+.site-header .nav-links a:hover, .site-header .nav-links a.active { color: #fff; }
+.site-header .nav-links a.btn-primary { color: #fff; }
+.site-header .nav-toggle span { background: #fff; }
+@media (max-width: 720px) { .site-header .nav-links { background: var(--gray-band); border-bottom-color: var(--gray-band-line); } }
+
+/* Alternating bands: gray sections with white text, cards stay white */
+.section-soft { background: var(--gray-band); }
+.section-soft h2, .section-soft .section-head p, .section-soft > .wrap > p,
+.section-soft .lead, .section-soft .ticks li { color: #fff; }
+.section-soft .section-head p, .section-soft .lead { color: #d6d9e0; }
+.section-soft .eyebrow { color: #7d9cff; }
+.section-soft .phase-label h3 { color: #fff; } .section-soft .phase-label p, .section-soft .road-step p { color: #d6d9e0; }
+.section-soft .road-top h3 { color: #fff; } .section-soft .road-steps::before { background: var(--gray-band-line); }
+.section-soft .rm-step-opt .road-dot { background: var(--gray-band); }
+.section-soft .card h3, .section-soft .card .question { color: var(--ink); }
+.section-soft .card p { color: var(--ink-soft); }
+.section-soft .faq summary { color: #fff; } .section-soft .faq details p { color: #d6d9e0; }
+.section-soft .faq details { border-color: var(--gray-band-line); }
+.section-soft .btn-ghost { background: transparent; color: #fff; border-color: #6b7180; }
+.section-soft .ticks li::before { background-color: #fff; }
+.section-soft strong { color: #fff; }
+.section-soft .card strong { color: var(--ink); }
+.section-soft > .wrap > p[style] { color: #d6d9e0 !important; }
+.section-soft > .wrap > p[style] strong { color: #fff !important; }
+.section-soft .phase-label span { color: #7d9cff; }
+.section-soft .rm-step-opt .road-dot { color: #fff; border-color: #7d9cff; }
+.cta-band { background: var(--gray-band); }
+.contact-card { background: var(--gray-band); border-color: var(--gray-band); }
+.contact-card .label { color: #b9bfcc; }
+.contact-card .value { color: #fff; }
+.contact-card .hint { color: #7d9cff; }
+.contact-card:hover { border-color: #7d9cff; }
+/* Block chevrons (sharp, filled) */
+.logo-mark path.block { stroke: none !important; }
+.logo-mark .chev-a.block { fill: var(--ink); }
+.logo-mark .chev-b.block { fill: var(--accent); }
+.site-header .logo-mark .chev-a.block { fill: #fff; }
+.site-header .logo-mark .chev-b.block { fill: #7d9cff; }
+.site-footer .logo, .site-footer .logo > span { color: var(--ink); }
+.hero-slogan { font-family: "Manrope", sans-serif; font-weight: 800; font-size: 1.15rem; color: var(--ink); letter-spacing: -0.01em; }
