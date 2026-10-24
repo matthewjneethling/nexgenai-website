@@ -1,5 +1,5 @@
 /* TEST THEME — gray/white rhythm (remove this file + link to reset) */
-:root { --gray-band: #2f333b; --gray-band-line: #454a55; }
+:root { --gray-band: #0b0d12; --gray-band-line: #2a2e38; }
 .site-header { background: var(--gray-band); border-bottom-color: var(--gray-band-line); }
 .site-header .logo, .site-header .logo span { color: #fff; }
 .site-header .logo-mark .chev-a { stroke: #fff; }
