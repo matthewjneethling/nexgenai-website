@@ -161,7 +161,7 @@ section { padding: 96px 0; }
 
 /* Booking */
 .booking-layout { display: grid; grid-template-columns: 340px 1fr; gap: 48px; align-items: start; }
-.calendly-inline-widget { min-width: 320px; height: 700px; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.calendly-inline-widget { min-width: 320px; height: 720px; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
 
 /* CTA band */
 .cta-band { background: var(--ink); color: #fff; border-radius: 22px; padding: 72px 56px; text-align: center; }
@@ -304,10 +304,3 @@ section[id] { scroll-margin-top: 80px; }
 .hours-list strong { color: var(--ink); font-weight: 600; white-space: nowrap; }
 .hours-note { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: 0.9rem; }
 .hours-note a { color: var(--accent); font-weight: 600; }
-
-/* Booking page on laptops: wide fixed-size Calendly box (only its time list scrolls) */
-@media (min-width: 961px) {
-  .booking-layout { grid-template-columns: 1fr; gap: 28px; }
-  .booking-layout .ticks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px 28px; }
-  .calendly-inline-widget { height: 700px; }
-}
