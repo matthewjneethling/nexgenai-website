@@ -110,3 +110,24 @@
 .site-footer .footer-bottom { margin-top: 40px; padding-top: 22px; padding-bottom: 0; }
 @media (max-width: 960px) { .footer-cols { grid-template-columns: 1fr 1fr; gap: 32px 28px; } }
 @media (max-width: 720px) { .site-footer { padding: 44px 0 20px; } .footer-cols { grid-template-columns: 1fr; gap: 28px; } .site-footer .footer-bottom { padding-bottom: 56px; } }
+
+/* Footer: Pages | Legal | Contact always side by side (wide, short rectangle) */
+@media (max-width: 960px) {
+  .site-footer { padding: 36px 0 20px; }
+  .footer-cols { grid-template-columns: 0.8fr 0.8fr 1.5fr; gap: 24px 20px; }
+  .fcol-brand { grid-column: 1 / -1; }
+  .fcol-brand p { max-width: 520px; }
+  .fcol h4 { margin-bottom: 12px; font-size: 1rem; }
+  .fcol ul { gap: 9px; }
+  .fcol li { font-size: 0.88rem; }
+  .fcol a, .floc { gap: 8px; }
+  .ficon { width: 16px; height: 16px; }
+  .site-footer .footer-bottom { margin-top: 28px; padding-top: 18px; }
+}
+@media (max-width: 480px) {
+  .footer-cols { grid-template-columns: 1fr 1fr; gap: 22px 16px; }
+  .fcol:last-child { grid-column: 1 / -1; }
+}
+@media (max-width: 480px) { .fcol-brand p { display: none; } }
+@media (max-width: 960px) { .footer-cols { grid-template-columns: 0.72fr 0.72fr 1.75fr; } .fcontact span { font-size: 0.84rem; } }
+@media (max-width: 480px) { .footer-cols { grid-template-columns: 1fr 1fr; } .fcontact span { font-size: 0.88rem; } }
