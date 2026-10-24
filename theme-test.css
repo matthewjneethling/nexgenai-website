@@ -45,3 +45,18 @@
 .site-header .logo-mark .chev-b.block { fill: #7d9cff; }
 .site-footer .logo, .site-footer .logo > span { color: var(--ink); }
 .hero-slogan { font-family: "Manrope", sans-serif; font-weight: 800; font-size: 1.15rem; color: var(--ink); letter-spacing: -0.01em; }
+
+/* Gray footer */
+.site-footer { background: var(--gray-band); border-top: 0; color: #d6d9e0; }
+.site-footer p, .site-footer li, .site-footer .footer-bottom { color: #d6d9e0; }
+.site-footer a { color: #d6d9e0; }
+.site-footer a:hover { color: #fff; }
+.site-footer h4 { color: #8d96a8; }
+.site-footer .logo, .site-footer .logo > span { color: #fff; }
+.site-footer .logo .ai { color: #7d9cff; }
+.site-footer .logo-mark .chev-a.block { fill: #fff; }
+.site-footer .logo-mark .chev-b.block { fill: #7d9cff; }
+.site-footer .footer-bottom { border-top-color: var(--gray-band-line); }
+.footer-grid { grid-template-columns: 1.6fr 1fr 1fr 1.4fr; }
+@media (max-width: 960px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 720px) { .footer-grid { grid-template-columns: 1fr; } }
