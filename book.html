@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20">
+  <link rel="stylesheet" href="styles.css?v=23">
   <link rel="stylesheet" href="theme-test.css?v=23">
   <script src="main.js?v=3" defer></script>
 </head>
@@ -51,18 +51,6 @@
   </div>
 </section>
 <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<script>
-window.__calEvents = [];
-window.addEventListener("message", function (e) {
-  if (!e.origin || e.origin.indexOf("calendly.com") === -1) return;
-  var d = e.data || {};
-  window.__calEvents.push(d.event + " " + JSON.stringify(d.payload || {}).slice(0, 80));
-  if (d.event === "calendly.page_height" && d.payload && d.payload.height) {
-    var h = parseInt(d.payload.height, 10), w = document.querySelector(".calendly-inline-widget");
-    if (w && h) w.style.height = Math.max(h, 520) + "px";
-  }
-});
-</script>
 </main>
 <footer class="site-footer">
   <div class="wrap">
