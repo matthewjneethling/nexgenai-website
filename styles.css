@@ -279,3 +279,17 @@ section[id] { scroll-margin-top: 80px; }
 .tool-list { list-style: none; margin-top: 12px; }
 .tool-list li { margin: 8px 0; font-size: 0.93rem; color: var(--ink-soft); }
 .section-head-wide { max-width: none; }
+
+/* Footer legal links + legal pages */
+.footer-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; }
+.legal-links { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+.legal-links a { color: var(--muted); text-decoration: none; }
+.legal-links a:hover { color: var(--ink); text-decoration: underline; }
+.legal { max-width: 808px; margin-left: max(0px, calc((100% - 1120px) / 2)); margin-right: auto; }
+.legal h2 { font-size: 1.25rem; margin: 36px 0 10px; }
+.legal p, .legal li { color: var(--ink-soft); font-size: 1rem; margin-bottom: 10px; }
+.legal ul { padding-left: 22px; margin-bottom: 10px; }
+.legal a { color: var(--accent); font-weight: 500; }
+.legal-date { color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 720px) { .footer-bottom { flex-direction: column; } }
+.footer-bottom { padding-bottom: 56px; } .legal-links { padding-right: 76px; }
