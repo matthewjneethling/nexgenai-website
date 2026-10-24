@@ -146,7 +146,7 @@ section { padding: 96px 0; }
 }
 .about-split { grid-template-columns: 320px 1fr; }
 .portrait-img { width: 100%; height: auto; max-width: 320px; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 20%; border-radius: 18px; }
-@media (max-width: 960px) { .about-split { grid-template-columns: 1fr; } .portrait-img { max-width: 240px; } }
+@media (max-width: 960px) { .about-split { grid-template-columns: 1fr; } .portrait-img { max-width: 240px; display: block; margin: 0 auto; } }
 .prose p { color: var(--ink-soft); margin-bottom: 18px; font-size: 1.05rem; }
 .prose p strong { color: var(--ink); }
 
